@@ -27,9 +27,11 @@ app.use('/api/category', categoryRoutes)
 app.use('/api/user', userRoutes)
 app.use('/api/login', tokenRoutes)
 
-app.get('/', (req, res) => res.send(`Puerto Conectado a la API BackEnd Multicamiones`))
+//TEST CONNECTION TO DATABASE
+app.get('/', (req, res) => res.send('You Are connected to API Ecommerce'))
 
-const port = process.env.PORT || appConfig.port 
+const port = process.env.PORT || appConfig.port
+
 console.log(`http//${appConfig.host}:${appConfig.port}`)
 app.listen(port, () => {
     console.log("port running in: "+port);

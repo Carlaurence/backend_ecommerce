@@ -2,8 +2,9 @@ const express = require('express')
 const router = express.Router();
 const categoryController = require('../controller/categoryController')
 //MIDDLEWARE 
+//HABILITAN LOS REQ.FILES
 const fileUpload = require('express-fileupload')
-//PONEMOS LOS MIDDLEWARE EN UNA CONST PARA USAR SUS METODOS  
+//PONEMOS LOS MIDDLEWARE EN UNA CONST PARA USAR SUS METODOS Y REQ.FILES
 const uploadExpress = fileUpload({ useTempFiles : true, tempFileDir : './uploads'})
 //MIDDLEWARE
 const tokenVerifier = require('../middleware/tokenVerifier')
