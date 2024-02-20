@@ -29,7 +29,7 @@ app.use('/api/category', categoryRoutes)
 app.use('/api/user', userRoutes)
 app.use('/api/login', tokenRoutes)
 
-app.get('/', (req, res) => res.send(`Puerto Conectado a la API BackEnd.\nSi desea consumir datos de esta API, conecterse a http//${appConfig.host}:${appConfig.port}/api/product`))
+app.get('/', (req, res) => res.send(`Puerto Conectado a la API BackEnd Multicamiones`))
 
 const port = process.env.PORT || appConfig.port 
 console.log(`http//${appConfig.host}:${appConfig.port}`)
