@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: false}));
 app.use(bodyParser.json());
 
 
-//CREACION DE LAS RUTAS PRIMARIAS DE ENLACE A LA BBDD + MIDDLEWARE
+//CREACION DE LAS RUTAS PRIMARIAS DE ENLACE A LA BBDD + MIDDLEWARE ok
 app.use('/api/product', productRoutes)
 app.use('/api/category', categoryRoutes)
 app.use('/api/user', userRoutes)
